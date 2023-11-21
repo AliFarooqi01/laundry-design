@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.875rem;
+    opacity: 1;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+h4 {
+    font-size: 1.1rem !important;
+    color: var(--bs-emphasis-color);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+li {
+    list-style: none;
+}
+
+.top-bar {
+    color: #fff;
+    display: flex;
+    height: 50px;
+}
+
+.nav-set>ul li {
+    padding-right: 30px;
+}
+
+.wrapper {
+    display: flex;
+    background: var(--bs-body-bg --bs-body-bg-rgb);
+}
+
+.wrapper .payment-sec {
+    max-width: 420px;
+    min-height: 100%;
+    padding: 10px;
+
+}
+.wrapper .payment-sec .search-button{
+    gap: 10px;
+}
+.wrapper .payment-sec .search-button .ser{
+    position: relative;
+}
+.wrapper .payment-sec .search-button .s1{
+    position: absolute;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+    top: 10px;
+} 
+.wrapper .payment-sec .search-button .s2{
+    position: absolute;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+    top: 10px;
+} 
+/* ///////table-sec///////////////////// */
+.wrapper .payment-sec .table1  .wp{
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 600;
+}
+.wrapper .payment-sec .table1 th{
+    color: #b3b5b8;
+    font-weight: 600;
+    padding-left: 4px;
+}
+.wrapper .payment-sec .table1 th, .wp{
+    border-right: 1px solid #dee2e6;
+}
+.wrapper .payment-sec .btn-sec{
+    gap: 10px;
+    padding-top: 10px;
+}
+.wrapper .payment-sec .btn-sec button{
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.wrapper .payment-sec .tbl-content {
+    width: 100%;
+    overflow-x: auto;
+    height: 563px;
+}
+.wrapper .main-side{
+   width: 100%;
+   padding: 10px;
+    height: auto;
+}
+.wrapper .main-side .content-sec{
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+.wrapper .main-side .content-sec .items{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 155, 192);
+}
+.wrapper .main-side .content-sec .items h4{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #000;
+}
+.wrapper .main-side .content-sec .items i{
+    font-size: 29px;
+    padding-bottom: 11px;
+}
+.wrapper .main-side .content-sec2 .items{
+    display: block;
+    border: 1px solid rgb(183,226 ,243) ;
+    background-color: transparent;
+}
+.wrapper .main-side .content-sec3 .items{
+    background-color:#b7e2f2 ;
+}
+@media (max-width:767.98px) {
+
+    .wrapper .payment-sec .tbl-content {
+        
+        height: 333px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .wrapper .main-side .content-sec{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+@media (min-width:768px) and (max-width :1024px) {
+    .wrapper{
+        flex-direction:row;
+    }
+    .wrapper .main-side .content-sec{
+        display: grid !important;
+        grid-template-columns: auto auto  auto auto;
+    }
+}

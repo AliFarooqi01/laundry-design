@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/efebd20f0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid top-bar bg-dark">
+
+        <div class="d-flex  align-items-center w-100  nav-set">
+            <ul class="d-flex justify-content-end w-100 align-items-center mb-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-cloud"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-signal"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img width="20px" height="20px" src="./images/box-icon.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-list fa-flip-horizontal"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-grid" href="#">
+                        <i style="line-height: 0.2;" class="fa-solid fa-sort-up fa-flip-horizontal "></i>
+                        <i style="line-height: 0.2;" class="fa-solid fa-sort-up fa-flip-vertical"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <div class="payment-sec">
+            <div class="d-flex search-button">
+                <div class="input-group mb-3">
+                    <i class="fa-solid fa-magnifying-glass s1"></i>
+                    <input type="search" class="form-control ser" placeholder="Customer">
+                </div>
+                <div class="input-group mb-3">
+                    <i class="fa-solid fa-magnifying-glass s2"></i>
+                    <input type="search" class="form-control ser" placeholder="Product">
+                </div>
+            </div>
+            <table class="table1" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>STORE</th>
+                        <th>REWARD</th>
+                        <th>VISIT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td class="wp">0.00</td>
+                    <td class="wp">4200</td>
+                    <td class="wp">19</td>
+                </tbody>
+            </table>
+            <div class="btn-sec d-flex align-items-center justify-content-between my-2">
+                <button class="btn btn-warning w-100"><i class="fa-regular fa-rectangle-list"></i></button>
+                <button class="btn btn-info w-100">PURCHASE</button>
+
+            </div>
+            <div class="table-responsive tbl-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Code</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="scrollable-tbody">
+                        <tr>
+                            <td>Red maxi-dress</td>
+                            <td>101</td>
+                            <td>1</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Classic blue jeans</td>
+                            <td>0013</td>
+                            <td>1</td>
+                            <td>35.00</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="table-responsive ">
+                <table class="table">
+                    <tfoot>
+                        <tr>
+                            <th>TOTAL</th>
+                            <th class="text-end">$85.00</th>
+                        </tr>
+                        <tr>
+                            <td>TAX</td>
+                            <td class="text-end">8.33</td>
+                        </tr>
+                        <tr>
+                            <td>NET</td>
+                            <td class="text-end">76.66</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <main class="main-side">
+            <div class="row w-100">
+                <div class="content-sec d-flex align-items-center ">
+                    <div style="background: rgb(165 ,197 ,54 );" class="items">
+                        <div>
+                            <i style="font-size: 40px;" class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h4>Shirt</h4>
+                    </div>
+                    <div class="items">
+                        <h4>Dresses</h4>
+                    </div>
+                    <div class="items">
+                        <h4>Jeans</h4>
+                    </div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                </div>
+                <!-- /////cloth-sec///////////// -->
+                <div class="content-sec content-sec2 d-flex align-items-center ">
+
+                    <div class="items d-block">
+                        <div class="w-100 text-center mb-2">
+                            <img style="width: 95px;" class="img-fluid" src="./images/l1.png" alt="">
+                        </div>
+                        <div style="background: #b7e2f2;" class="border-top text-center">
+                            <h4 class="mb-0">$35.00</h4>
+                        </div>
+                    </div>
+                    <div class="items d-block">
+                        <div class="w-100 text-center mb-2">
+                            <img style="width: 59px;" class="img-fluid" src="./images/l2.png" alt="">
+                        </div>
+                        <div style="background: #b7e2f2;" class="border-top text-center">
+                            <h4 class="mb-0">$50.00</h4>
+                        </div>
+                    </div>
+                    <div class="items d-block">
+                        <div class="w-100 text-center mb-2">
+                            <img style="width: 30px;" class="img-fluid" src="./images/l3.png" alt="">
+                        </div>
+                        <div style="background: #b7e2f2;" class="border-top text-center">
+                            <h4 class="mb-0">$20.00</h4>
+                        </div>
+                    </div>
+                    <div class="items d-block">
+                        <div class="w-100 text-center mb-2">
+                            <img style="width: 23.3px;" class="img-fluid" src="./images/l4.png" alt="">
+                        </div>
+                        <div style="background: #b7e2f2;" class="border-top text-center">
+                            <h4 class="mb-0">$15.00</h4>
+                        </div>
+                    </div>
+                    <div class="items d-block">
+                        <div class="w-100 text-center mb-2">
+                            <img style="width: 42px;" class="img-fluid" src="./images/l5.png" alt="">
+                        </div>
+                        <div style="background: #b7e2f2;" class="border-top text-center">
+                            <h4 class="mb-0">$45.00</h4>
+                        </div>
+                    </div>
+                    <div class="items d-block">
+                        <div class="w-100 text-center mb-2">
+                            <img style="width: 58px;" class="img-fluid" src="./images/l6.png" alt="">
+                        </div>
+                        <div style="background: #b7e2f2;" class="border-top text-center">
+                            <h4 class="mb-0">$25.00</h4>
+                        </div>
+                    </div>
+                    <div class="items d-block">
+                        <div class="w-100 text-center mb-2">
+                            <img style="width: 37px;" class="img-fluid" src="./images/l7.png" alt="">
+                        </div>
+                        <div style="background: #b7e2f2;" class="border-top text-center">
+                            <h4 class="mb-0">$30.00</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ////items////////// -->
+
+                <div class="content-sec content-sec3 d-flex align-items-center ">
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                </div>
+
+
+                <!-- /////items////////// -->
+
+                <div class="content-sec d-flex align-items-center ">
+                    <div class="items">
+                        <div>
+                            <i style="font-size: 40px;" class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Recent sales</h4>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Pendding Sales</h4>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Pickup Orders</h4>
+                    </div>
+                    <div class="items">
+                        <h4>Layaways</h4>
+                    </div>
+                    <div class="items">
+                        <h4>Close day</h4>
+                    </div>
+                    <div class="items text-center">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4>X-report</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /////items////////// -->
+
+                <div class="content-sec d-flex align-items-center ">
+                    <div class="items">Cash in/Out</div>
+                    <div class="items">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h4>Stock & Price</h4>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <h4>Clock in Out</h4>
+                        </div>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Check Gift Card Balance</h4>
+                    </div>
+                    <div class="items">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="fas fa-print"></i>
+                            </div>
+                            <h4>Coupons</h4>
+                        </div>
+                    </div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+
+                </div>
+
+                <!-- ////items////////// -->
+
+                <div class="content-sec content-sec3 d-flex align-items-center ">
+                    <div class="items text-center">
+                        <h4>New Sale</h4>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Save Sale</h4>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Save as Order</h4>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Save as layaways</h4>
+                    </div>
+                    <div class="items">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <h4>Discount</h4>
+                        </div>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Tax exempt</h4>
+                    </div>
+                    <div class="items">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="far fa-clipboard"></i>
+                            </div>
+                            <h4>Notes</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ////items////////// -->
+
+                <div class="content-sec content-sec3 d-flex align-items-center ">
+                    <div class="items">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="fas fa-print"></i>
+                            </div>
+                            <h4>Last Receipt</h4>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="far fa-folder-open"></i>
+                            </div>
+                            <h4>Cash drawer</h4>
+                        </div>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Promotions</h4>
+                    </div>
+                    <div class="items text-center">
+                        <h4>Coupons</h4>
+                    </div>
+                    <div class="items">
+                        <div class="d-block text-center">
+                            <div>
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h4>Receipt</h4>
+                        </div>
+                    </div>
+
+                    <div class="items text-center">
+                        <h4>Add Shopping</h4>
+                    </div>
+                    <div class="items"></div>
+
+                </div>
+
+
+                <!-- //////////payment Buttons////////////// -->
+
+                <div class="content-sec d-flex align-items-center ">
+                    <div style="background: rgb(224,195,67 );" class="items">
+                        <div>
+                            <i style="font-size: 30px;" class="fas fa-user-friends"></i>
+                        </div>
+                    </div>
+                    <div style="background: rgb(224,195,67 );" class="items">
+                        <div>
+                            <i style="font-size: 30px;" class="fas fa-lock"></i>
+
+                        </div>
+                    </div>
+                    <div style="background: rgb(235,82,85);" class="items">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="d-flex align-items-center"   href="">
+                                <i style="font-size: 30px; color: #000;" class="far fa-trash-alt"></i>
+                                <h4>SALE</h4>
+                            </a>
+                          
+                           
+                        </div>
+                    </div>
+
+                    <div style="background: rgb(165 ,197 ,54 );" class="items">
+                        <a  href="">  <h4>PAY</h4></a>
+                      
+                    </div>
+                   
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
